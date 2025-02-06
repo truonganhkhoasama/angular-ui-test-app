@@ -25,6 +25,22 @@ ng serve
 
 The app will be available at http://localhost:4200/
 
-3. Open Cypress
+3. Generate UI Testing scripts
+Using the extension to generate UI Testing script for Cypress in Javascript by uploading 6 files:
+- app.component.ts
+- app.component.html
+- user-form.component.ts
+- user-form.component.html
+- user-list.component.ts
+- user-list.component.html
+
+Name the generated file as test.cy.js and put the file in cypress/e2e
+
+4. Start testing
+
+Set cypress.config.ts
+    baseUrl: 'http://localhost:4200'
+
+Open Cypress UI and start testing UI of the app on Chrome.
 
 npx cypress open
